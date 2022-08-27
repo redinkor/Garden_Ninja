@@ -4,6 +4,55 @@ body {
 .hello {
   opacity: 1 !important;
 }
+.slideGallery {
+  background-image: url(../IMG/header__photo.jpg);
+  box-shadow: 6px 6px 25px #113408;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 150px;
+}
+
+.slideGallery__item-content {
+  text-align: center;
+  padding-top: 50px;
+  max-width: 965px;
+  margin: 0 auto;
+}
+.slideGallery__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 36px;
+  color: rgb(23, 239, 11);
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+.slideGallery {
+position: relative;
+}
+.btn-gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.gallery__btn {
+  font-size: 15px;
+  line-height: 15px;
+  color: rgb(26, 155, 12);
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  padding: 9px 40px 8px 20px;
+  border: 2px solid rgb(106, 205, 95);
+  border-radius: 5px;
+  border-right-width: 20px;
+  position: relative;
+  z-index: 2;
+  outline: none;
+  transition-duration: 800ms;
+}
 .full {
   position: fixed;
   left: 0;
@@ -36,8 +85,9 @@ body {
   display: grid;
   grid-column-gap: 8px;
   grid-row-gap: 8px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   grid-auto-rows: 8px;
+  margin-bottom: 84px;
 }
 .gallery img {
   max-width: 100%;
