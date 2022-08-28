@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 150px;
+  min-height: 125px;
 }
 
 .slideGallery__item-content {
@@ -89,6 +89,7 @@ position: relative;
   grid-auto-rows: 8px;
   margin-bottom: 84px;
 }
+
 .gallery img {
   max-width: 100%;
   border-radius: 8px;
