@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="CSS/MasonryGallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
   </head>
   <body>
     <header class="header">
@@ -91,22 +92,35 @@
     <section class="gallery" id="gallery">
       
       <div class="gallery-item">
-        <div class="content"><img src="img/beetle.jpg" alt=""></div>
+        <a href="img/beetle.jpg" class="content">
+          <img src="img/beetle.jpg" alt="">
+          <div class="gallery-item-hover">Погледнете</div>
+        </a>
     </div>
          <div class="gallery-item">
-            <div class="content"><img src="img/liberty.jpg" alt=""></div>
+            <a href="img/liberty.jpg" class="content"><img src="img/liberty.jpg" alt="">
+              <div class="gallery-item-hover">Погледнете</div>
+            </a>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="img/lighthouse.jpg" alt=""></div>
+          <a href="img/lighthouse.jpg" class="content"><img src="img/lighthouse.jpg" alt="">
+            <div class="gallery-item-hover">Погледнете</div>
+          </a>
       </div>
       <div class="gallery-item">
-        <div class="content"><img src="img/minimalismo.jpg" alt=""></div>
+        <a href="img/minimalismo.jpg" class="content"><img src="img/minimalismo.jpg" alt="">
+          <div class="gallery-item-hover">Погледнете</div>
+        </a>
     </div>
     <div class="gallery-item">
-      <div class="content"><img src="img/salad.jpg" alt=""></div>
+      <a href="img/salad.jpg" class="content"><img src="img/salad.jpg" alt="">
+        <div class="gallery-item-hover">Погледнете</div>
+      </a>
   </div>
   <div class="gallery-item">
-    <div class="content"><img src="img/shutterbug.jpg" alt=""></div>
+    <a href="img/shutterbug.jpg" class="content"><img src="img/shutterbug.jpg" alt="">
+      <div class="gallery-item-hover">Погледнете</div>
+    </a>
 </div> 
     </section>
     <footer class="footer">
@@ -163,5 +177,18 @@
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/MasonryGallery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script>
+    $(".gallery").magnificPopup({
+
+      delegate: "a",
+      type: "image",
+      gallery: {
+        enabled: true
+      }
+    });
+  </script>
   </body>
 </html>
