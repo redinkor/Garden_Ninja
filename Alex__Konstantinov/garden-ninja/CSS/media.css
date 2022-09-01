@@ -203,7 +203,7 @@
 @media (max-width: 490px) {
   .header__social {
     text-align: center;
-    padding: 90px 0px 0px 0px;
+    padding: 90px 20px 0px 0px;
   }
 }
 @media (max-width: 360px) {
