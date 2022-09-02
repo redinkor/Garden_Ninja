@@ -1357,7 +1357,7 @@ textarea.input {
 }
 .about__video video {
   border-radius: 10px;
-  box-shadow: 10px 10px #1dc928;
+  box-shadow: 10px 10px 10px #1dc928;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1368,9 +1368,14 @@ textarea.input {
 }
 .about__content {
   flex: 1 1 auto;
-  padding: 20px 0px 0px 121px;
+  margin: 0px 0px 0px 40px;
+  padding: 20px 0px 0px 111px;
+  background: #1dc928;
+  border-radius: 20px;
+  box-shadow: 10px 20px 10px #1dc928;
 }
 .about__title {
+  color:thistle;
   font-size: 800;
   font-size: 40px;
   line-height: 142%;
@@ -1392,8 +1397,11 @@ textarea.input {
 .item-about {
   display: flex;
 }
-.item-about__icon {
+.item-about__icon  {
   flex: 0 0 32px;
+}
+.item-about__icon img {
+  width: 100px;
 }
 .item-about__body {
   flex: 1 1 auto;
