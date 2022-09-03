@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/gstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
   </head>
   <body>
     <header class="header">
@@ -86,8 +87,11 @@
       </a>
      </section>
    <div class="section animate">
-      <div class="middle">
-          <img src="IMG/Проекти/Бусманци/20190607_115825 — копия.jpg" alt="">
+      <div class="middle gallery">
+        <ul href="IMG/Проекти/Бусманци/20190511_112838.jpg">
+          <img src="IMG/Проекти/Бусманци/20190511_112838 — копия.jpg" alt="">
+        </ul>
+           
       </div>
       <div class="left title">
          <div class="content">
@@ -97,11 +101,23 @@
          </div>
       </div>
       <div class="right tiles">
+        <div class="gallery">
+          <ul href="IMG/Проекти/Бусманци/20190607_115825.jpg">
+            <img src="IMG/Проекти/Бусманци/20190607_115825 — копия.jpg" alt="">
+          </ul>
+          <ul href="IMG/Проекти/Бусманци/20190607_115825.jpg">
+            <img src="IMG/Проекти/Бусманци/20190607_115825 — копия.jpg" alt="">
+          </ul>
+          <ul href="IMG/Проекти/Бусманци/20190607_115825.jpg">
+            <img src="IMG/Проекти/Бусманци/20190607_115825 — копия.jpg" alt="">
+          </ul>
+          <ul href="IMG/Проекти/Бусманци/20190607_115825.jpg">
+            <img src="IMG/Проекти/Бусманци/20190607_115825 — копия.jpg" alt="">
+          </ul>
+        </div>
 
-          <img src="IMG/Проекти/Бусманци/20190504_162327 — копия.jpg" alt="">
-          <img src="IMG/Проекти/Бусманци/20190504_162327 — копия.jpg" alt="">
-          <img src="IMG/Проекти/Бусманци/20190607_115825 — копия.jpg" alt="">
-          <img src="IMG/Проекти/Бусманци/20190511_112838 — копия.jpg" alt="">
+        
+  
       </div>
    </div>
    
@@ -222,5 +238,25 @@
     <script src="JS/script.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script>
+    $(".gallery").magnificPopup({
+
+      delegate: "ul",
+      type: "image",
+      gallery: {
+        enabled: true
+      },
+      image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title');
+			}
+		}
+    });
+  </script>
   </body>
 </html>
