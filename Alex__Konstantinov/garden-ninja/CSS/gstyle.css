@@ -1,12 +1,11 @@
 .slideGallery {
   background-image: url(../IMG/header__photo.jpg);
-  box-shadow: 6px 6px 25px #113408;
+  box-shadow: 6px 6px 15px #113408;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 125px;
 }
-
 .services__top {
   margin: 8px;
 }
@@ -50,7 +49,16 @@ position: relative;
   outline: none;
   transition-duration: 800ms;
 }
+.footer__content{
+  margin-top: 55px;
 
+}
+.gallery img{
+  border-radius: 15px;
+}
+.gallery img:hover {
+  box-shadow: 8px 8px 27px #113408;
+}
 .header h1, .footer h1 {
   font-size: 4em;
   font-weight: 300;
@@ -78,6 +86,8 @@ position: relative;
   position: relative;
 }
 .section .left, .section .middle, .section .right {
+  box-shadow: 6px 6px 25px #113408;
+  border-radius: 15px;
   width: 100%;
   display: block;
   color: #fff;
@@ -150,7 +160,6 @@ position: relative;
   }
 }
 .section .title {
-  
   background: #4E6E5D;
 }
 .section .title h2 {
