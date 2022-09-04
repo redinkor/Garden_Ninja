@@ -12,13 +12,7 @@ body {
   background-position: center;
   min-height: 125px;
 }
-.content{
-  display: block;
-  flex: 25%;
-  
-  position: relative;
 
-}
 .services__top {
   margin: 8px;
 }
@@ -159,6 +153,12 @@ position: relative;
 @media (min-width: 800px) {
 	.gallery__item_big {
 		grid-column: span 2;
+		grid-row: span 3;
+	}
+}
+@media (min-width: 800px) {
+	.gallery__item_big1 {
+		grid-column: span 1;
 		grid-row: span 2;
 	}
 }
