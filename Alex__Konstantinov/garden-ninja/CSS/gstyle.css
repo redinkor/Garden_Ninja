@@ -50,14 +50,14 @@ position: relative;
   transition-duration: 800ms;
 }
 .footer__content{
-  margin-top: 55px;
+  margin-top: 7%;
 
 }
 .gallery img:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
-  transition: 1s;
+  transition: 0.8s;
   border-radius: 15px;
 }
 .section {
