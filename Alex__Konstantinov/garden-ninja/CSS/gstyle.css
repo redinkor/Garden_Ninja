@@ -53,34 +53,13 @@ position: relative;
   margin-top: 55px;
 
 }
-.gallery img{
+.gallery img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: 1s;
   border-radius: 15px;
 }
-.gallery img:hover {
-  box-shadow: 8px 8px 27px #113408;
-}
-.header h1, .footer h1 {
-  font-size: 4em;
-  font-weight: 300;
-}
-.header i.fa, .footer i.fa {
-  font-size: 4em;
-}
-.header .bounce, .footer .bounce {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-transform-origin: center bottom;
-  transform-origin: center bottom;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-}
-.header .animated, .footer .animated {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
 .section {
   width: 100%;
   position: relative;
@@ -186,29 +165,27 @@ position: relative;
 }
 .section .tiles {
   padding: 0;
-  background: #fff;
+  background: #4E6E5D;
   clear: both;
   display: none;
   float: none;
 }
 .section .tiles img {
-  width: 50%;
+  object-fit: cover;
+  width:100%;
+  height:250px;
   float: left;
-  height: auto;
-  opacity: 0.7;
   -moz-transition: 0.3s ease-in-out all;
   -o-transition: 0.3s ease-in-out all;
   -webkit-transition: 0.3s ease-in-out all;
   transition: 0.3s ease-in-out all;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
 }
 .section .tiles img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -o-filter: grayscale(0%);
+  border-radius: 15px;
 }
 @media (min-width: 768px) {
   .section .tiles {
@@ -216,7 +193,7 @@ position: relative;
   }
 }
 .section .middle {
-  background: slategray;
+  background: #4E6E5D;
   z-index: 2;
   padding: 0;
 }
@@ -225,25 +202,20 @@ position: relative;
   height: auto;
   display: block;
 }
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-20px);
-  }
-  60% {
-    -webkit-transform: translateY(-10px);
-  }
+.item {
+  overflow: hidden;
 }
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
+.item:hover{
+  box-shadow: 0px 10px 13px -7px #256316;
 }
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+.form__title-box{
+  margin-top: 8.5%;
+}
+.tiles{
+  border-radius: 15px;
+}
+
